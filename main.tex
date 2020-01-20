@@ -1,0 +1,179 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \textheight=12in
+    \pagestyle{empty}
+    \raggedright
+    \usepackage{fontawesome}
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=black,
+}
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+    % END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+
+\vspace*{-10mm}
+
+%==== Profile ====%
+%\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {Drupad Kumar Singh}}\\
+	\href{https://www.linkedin.com/in/drupad-singh-14337712b/}{\faLinkedin}
+	$\cdot$
+	\href{https://github.com/orton009}{\faGithub}
+	$\cdot$
+	\href{mailto:drupad.k.singh98@gmail.com}{drupad.k.singh98@gmail.com} $\cdot$ +918085542513 $\cdot$ Hyderabad, IN \\
+\end{center}
+\vspace*{1mm}
+%==== Experience ====%
+\header{Work Experience}
+\textbf{Software Engineer  \hfill United Health Group} \hfill July 2019\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\small{\item Designing and developing solutions for healthcare domain as a Software Engineer.}
+	\small{\item Working on Service Now Portal as a Service Now Developer.}
+	\small{\item  Currently working on Cloning Autmoation - Clone down from prod environment to Dev environment is being automated to save Developer's work in Dev environment and time spent in manual clone down. }
+\end{itemize}
+\vspace{0mm}
+
+\textbf{Backend Developer Intern  \hfill Brainyfied} \hfill May 2018 | Jun 2018\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\small{\item Worked as a Backend Developer and created database services.}
+	\small{\item Developed REST API using NodeJS as Backend Framework and MySQL as a database for User information and developed JWT based authentication system and Google OAuth is used for Signup and Login.}
+	\small{\item  Developed REST API using NodeJS and ExpressJS for Q&A section of BrainyFied blog. MYSQL(document based) is used as a Database.}
+\end{itemize}
+\vspace{0mm}
+
+%==== Projects ====%
+\header{Projects \hfill \sl \small{Portfolio: \href{http://orton009.github.io}{orton009.github.io}} \hfill \faGithub \sl \small{ \href{https://github.com/orton009}{github.com/orton009}}}
+
+\textbf{Student Portal
+\href{https://github.com/orton009}{\faGithub}}
+\vspace{-1mm}
+\begin{itemize}
+	\small{\item Created a web application that provides a common platform
+for faculties as well as students to register themselves and search for a particular student/faculty on the basis of his/her skillsand experiences in different fields of technology for Academic Project.  }
+	\small{\item Technology Stack -> NodeJS + ExpressJS , Angular2 , MongoDB  }
+	\vspace{-1mm}
+\end{itemize}
+
+\textbf{Online Quiz
+\href{https://github.com/orton009}{\faGithub}}
+\vspace{-1mm}
+\begin{itemize}
+	\small{\item Online lite Quiz Web Application which provide an interface to play game one at a time. Followed by User Registaration and Login page there are 20 randomly generated MCQs which needs to be answered. After the quiz the result is displayed on the last page.}
+	\small{\item Technology Stack -> JSP , JAVA Servlets , MYSQL , HTML+CSS  }
+	\vspace{-1mm}
+\end{itemize}
+
+\textbf{Online Food Ordering System
+\href{https://github.com/orton009}{\faGithub}}
+\vspace{-1mm}
+\begin{itemize}
+	\small{\item Created a web application which provides interface to select products online, add them to cart and send the order to the Restaurant. }
+	\small{\item Technology Stack ->JSP , MYSQL , HTML5+CSS3+Bootstrap}
+	\vspace{-1mm}
+\end{itemize}
+
+%==== Education ====%
+\header{Education}
+\vspace{2mm}
+\textbf{Shri G.S. Institute of Technology and Science (Grade : 7.1)}\hfill Indore, IN\\
+Bachelor of Engineering in Computer Science and Engineering \hfill Grad: Jun 2019\\
+\vspace{2mm}
+\textbf{Christ Jyoti Senior Secondary School (Percentage : 94.8)}\hfill Satna, IN\\
+High School (physics, chemistry and Mathematics) \hfill Grad: May 2015\\
+% Courses: Data Structures, Operating Systems, Algorithms, Computer Networks\\
+%==== Skills ====%
+\vspace*{2mm}
+\header{Skills}
+\begin{tabular}{ l l }
+    \small{\textbf{Operating System}      & \small{Windows, Linux}      \\
+	\small{\textbf{Languages}}      & \small{Javascript, C, SQL ,MongoDB , JAVA}      \\
+	\small{\textbf{Libraries/Frameworks}} 
+	&
+	 \small{Angular, NodeJS, ExpressJS, GIT, BootStrap, REST, MEAN Stack}
+	 \\
+	\small{\textbf{Others}}                     &
+	 \small{Data Structures , Algorithms, ServiceNow Platform}
+	 \\
+	 \small{\textbf{Interest}}                     &
+	  Full Stack Web Development
+\end{tabular}
+
+%=== Online Courses ===%
+\vspace{2mm}
+\header{Online Courses}
+\textbf{Angular 6 formerly Angular 2 from Udemy}\hfill\\
+\vspace{2mm}
+\textbf{Full Stack development with MEAN Stack}\hfill \\
+\vspace{2mm}
+\textbf{The Complete NodeJS Developer (Basics to Advanced) from Udemy}\hfill \\
+\vspace{2mm}
+\textbf{Javascript ES6 from codeschool}\hfill \\
+\vspace{2mm}
+\textbf{Data Structures and Algorithms}\hfill \\
+\vspace{2mm}
+
+\end{document}
